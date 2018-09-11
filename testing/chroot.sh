@@ -21,5 +21,5 @@ systemctl start NetworkManager
 pacman --noconfirm --needed -S grub && grub-install --target=i386-pc /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
 
 pacman --noconfirm --needed -S dialog
-larbs() { curl -O https://raw.githubusercontent.com/drunkenpanda2000/LARBS/master/narbs.sh && bash narbs.sh ;}
+larbs() { curl -O https://raw.githubusercontent.com/drunkenpanda2000/NARBS/master/narbs.sh && bash narbs.sh ;}
 dialog --title "Install ArchRice" --yesno "This install script will easily let you access Nic's Auto-Rice Boostrapping Scripts (NARBS) which automatically install a full Arch Linux i3-gaps desktop environment.\n\nIf you'd like to install this, select yes, otherwise select no.\n\nNic"  15 60 && narbs
